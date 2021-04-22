@@ -116,10 +116,12 @@ ul {
 }
 
 .menu {
-  display: flex;
   margin: 150px 0 271px 0;
-  padding: 0 16px;
   background-color: black;
+}
+.menu__wrapper {
+  display: flex;
+  padding: 0 16px;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -175,4 +177,16 @@ ul {
 }
 .about__image-box {
   flex-basis: 50%;
+}
+
+.hidden-item {
+  display: none;
+}
+
+.fixedStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
 }

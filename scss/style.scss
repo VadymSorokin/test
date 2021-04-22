@@ -121,7 +121,8 @@ ul {
 				border-radius: 4px;
 			}
 		}
-		&_arrow{
+
+		&_arrow {
 			position: absolute;
 			top: calc(50% + 200px);
 			left: 50%;
@@ -137,13 +138,16 @@ ul {
 }
 
 .menu {
-	display: flex;
 	margin: 150px 0 271px 0;
-	padding: 0 16px;
 	background-color: black;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
+
+	&__wrapper {
+		display: flex;
+		padding: 0 16px;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
 
 	&__nav-list {
 		display: flex;
@@ -202,10 +206,22 @@ ul {
 	}
 
 	&__image {
-		width:100%;
-		&-box{
+		width: 100%;
+
+		&-box {
 			flex-basis: 50%;
 
 		}
 	}
+}
+
+.hidden-item {
+	display: none;
+}
+.fixedStyle{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	width: 100%;
 }
